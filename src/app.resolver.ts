@@ -8,7 +8,6 @@ export class RootResolver {
       {
         name: 'hello-gql',
         value: 'world-gql',
-        options: {},
       },
     ];
     return new Date();

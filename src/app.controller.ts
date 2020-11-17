@@ -12,19 +12,6 @@ export class AppController {
       {
         name: 'hello',
         value: 'world',
-        options: {},
-      },
-    ];
-
-    return this.appService.getHello();
-  }
-
-  @Post('/cookie-without-options')
-  cookieWithoutOptions(@Req() req: NestCookieRequest): string {
-    req._cookies = [
-      {
-        name: 'hello',
-        value: 'world',
       },
     ];
 
