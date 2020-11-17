@@ -13,6 +13,7 @@ import { AppService } from './app.service';
     GraphQLModule.forRoot({
       playground: true,
       autoSchemaFile: true,
+      context: ({ req, res }) => ({ req, res }),
     }),
   ],
   controllers: [AppController],

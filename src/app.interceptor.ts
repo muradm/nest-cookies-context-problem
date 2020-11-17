@@ -29,7 +29,7 @@ export class AppCookieInterceptor extends CookiesInterceptor {
 
 //     if (context.getType<GqlContextType>() === 'graphql') {
 //       const gql = GqlExecutionContext.create(context);
-//       return { req: gql.getContext().req, res: gql.getContext().req.res };
+//       return { req: gql.getContext().req, res: gql.getContext().res };
 //     }
 
 //     throw new Error('Unsupported context type ' + context.getType());
