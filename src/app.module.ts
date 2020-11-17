@@ -4,6 +4,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { CookieModule } from 'nest-cookies';
 import { AppController } from './app.controller';
 import { AppCookieInterceptor } from './app.interceptor';
+import { RootResolver } from './app.resolver';
 import { AppService } from './app.service';
 
 @Module({
@@ -11,6 +12,7 @@ import { AppService } from './app.service';
     CookieModule,
     GraphQLModule.forRoot({
       playground: true,
+      autoSchemaFile: true,
     }),
   ],
   controllers: [AppController],
@@ -20,6 +22,7 @@ import { AppService } from './app.service';
       provide: APP_INTERCEPTOR,
       useClass: AppCookieInterceptor,
     },
+    RootResolver,
   ],
 })
 export class AppModule {}

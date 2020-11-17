@@ -26,6 +26,7 @@
     "@nestjs/graphql": "^7.8.2",
     "@nestjs/platform-express": "^7.5.1",
     "apollo-server-express": "^2.19.0",
+    "fastify": "^3.8.0",
     "graphql": "^15.4.0",
     "graphql-tools": "^7.0.1",
     "nest-cookies": "^1.0.0",
